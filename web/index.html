@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/libs.css">
+    
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<section class="profile">
+				<div class="about">
+					<img src="img/photo.png" alt="manager photo">
+					
+					<h1 class="about__name">
+						Вероника Ростова                   
+					</h1>
+					<!-- /.about__name -->
+					<span class="about__post">
+						Менеджер по продажам
+					</span>
+					<!-- /.about__post -->
+					<div class="about__suggestion">
+						<p>Подберу для вас самые лучшие предложения.</p>
+						<p>Мои услуги абсолютно бесплатны</p>
+					</div>
+					<!-- /.about__suggestion -->
+				</div>
+				<!-- /.about -->
+
+				<div class="chart clearfix">
+					<table>
+						<tr class="chart__caption">
+							<td></td>
+							<td>Услуг</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="chart__second-row">
+								<div class="chart__progress" style="width:69%;">
+									<div style="width:100%;" class="chart__line">
+										Ручное бронирование
+									</div>
+									<div style="width:25%;"  class="chart__line chart__line_blue ">
+										Пакетные туры
+									</div>
+									<div style="width:17%;"  class="chart__line chart__line_blue">
+										Отели
+									</div>
+								</div>
+								
+								<div class="chart__counter" style="">
+									<div>11</div>
+									<div>3</div>
+									<div>1</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="chart__footer">
+							<td>Всего</td>
+							<td>15</td>
+						</tr>
+					</table>
+				</div>
+				<!-- /.chart clearfix -->
+			</section>
+			
+			<section class="questions">
+				<div class="questions-caption">
+					<div class="questions__reviews">
+						<span>Последние отзывы</span>
+						<a href="#">Все отзывы</a>
+					</div>
+					<div class="questions__counter">
+						<span class="likes">
+							<a href="#"><i class="fas fa-heart"></i></a>
+							<span>131</span>
+						</span>
+						<span class="comments">
+							<a href="#"><i class="fa fa-comment"></i></a>
+							<span>14</span>
+						</span>
+					</div>
+				</div>
+				<div class="questions__block">
+					<div class="questions__name">
+						<span>
+							Самуил
+						</span>
+						<span >
+							13 октября 2011
+						</span>
+					</div>
+					<div class="questions__comment">
+						<div class="blocks"></div>
+						<P>Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</P>
+					</div>
+				</div>
+				<div class="questions__block">
+					<div class="questions__name">
+						<span>
+						
+							Лилия Семёновна 
+						</span>
+						<span >
+							14 октября 2011
+						</span>
+					</div>
+					<div class="questions__comment">
+						<div class="blocks"></div>
+						<P>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</P>
+					</div>
+				</div>
+				<!-- /.questions__block -->
+
+				<div class="questions__block">
+					<div class="questions__name">
+						<span>
+							Лилия Семёновна 
+						</span>
+						<span >
+							14 октября 2011
+						</span>
+					</div>
+					<div class="questions__comment">
+						<div class="blocks"></div>
+						<P>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</P>
+					</div>
+				</div>
+				
+				<div id="comment-list"> </div>
+			</div>
+			<!-- /.container -->
+				
+			<form id="add-comment-form" class="form" method="post">
+				<div class="container">
+					<textarea required id="new-comment" class="form__new-comment" name="todo" rows="4"></textarea>
+					<input type="button" id="add-comment" class="form__add-comment" value="Написать консультанту">
+				</div>
+  			</form>
+  		</section>	
+	</div>
+	<!-- /.wrapper -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/comment.js"></script>
+	<script src="js/libs/libs.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
